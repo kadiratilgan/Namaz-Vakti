@@ -1,0 +1,1010 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A5DC4A132771B89C0A56C4 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */; };
+		067FCD4765E7E1A9D1ED4404 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCD93CCDA44C846BC782A93 /* WidgetKit.framework */; };
+		06A4559C24DE95C68F5BD932 /* DailyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2815E05D7DA58908462022 /* DailyContent.swift */; };
+		07C94DC607196EABE83EDF10 /* PrayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */; };
+		08178C785EAEDC1B0A09DFC3 /* DailyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2815E05D7DA58908462022 /* DailyContent.swift */; };
+		0CE3477C49BD46F3C97DF96B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3DED1073E23E9BF19B0DB015 /* Localizable.xcstrings */; };
+		127F66D788C6ED87AE301B0F /* RamazanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9FEBC3DDC2228E63D13D6 /* RamazanView.swift */; };
+		12EDED4709647EC6C45C5D2D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0898CD4ED2D7A917DAB58 /* Theme.swift */; };
+		15221A97D0612E336789D0DE /* PrayerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4399E605C37E498544F13CC /* PrayerActivity.swift */; };
+		1BC4012FA6FABB57CDA9DCC0 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FE0396D87C3C0F6A0A3A4752 /* AppShortcuts.xcstrings */; };
+		211054EDEA81F3570490C080 /* PrayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */; };
+		2189706ADA3076830D42EAAE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35807F4348D1CBFD936518D5 /* SwiftUI.framework */; };
+		261C03639D11A7585A86E0F6 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */; };
+		297DA33B41D7D7A5AF6C5EE6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0898CD4ED2D7A917DAB58 /* Theme.swift */; };
+		2E58EFDB056580E9ED92E22F /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DCB40AB8D71EFBD788F81ECB /* InfoPlist.xcstrings */; };
+		37C47442171655163846E56C /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74553A7DBEB75D6E6600020C /* SiriView.swift */; };
+		3C6F2D760390E636949C7D41 /* TakipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38FAEF17D144191CAC7E113 /* TakipView.swift */; };
+		3F14C0FBE0474078C7472A01 /* KesfetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F863422C340C699D44F0C /* KesfetView.swift */; };
+		447944989A99DFBDCAAD5BD2 /* NamazVaktiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCA09A6257015C3A2EF6E /* NamazVaktiApp.swift */; };
+		475A01D40BD6FE8A2CF3EAD4 /* WatchComplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E95FFDDF1F8449BF7A2FA1 /* WatchComplications.swift */; };
+		4C0CC94572AD62755D825294 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C451AF14AEAD5E7549252 /* LocationService.swift */; };
+		4C918661C4623E14B9F913C2 /* WidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A37E5F7EB8196B3AA50CA /* WidgetTimeline.swift */; };
+		4E301475C9B46EA679AB55F4 /* TakvimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C132988A68599981D131AF7 /* TakvimView.swift */; };
+		4F37A9A93113468FA66F903E /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 5D52426CCF5DC79E97AAF581 /* Adhan */; };
+		502A0CB0297830AC84700A27 /* SeyahatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF06DAADFA96CF77A835B6 /* SeyahatView.swift */; };
+		52BEA6060E3118FAECC7E6E9 /* NamazVaktiWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6718828917C20E6B51B71A /* NamazVaktiWidgets.swift */; };
+		5868D2BDF86665A59C324E6B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35807F4348D1CBFD936518D5 /* SwiftUI.framework */; };
+		59C46D490DAE739D33033CA1 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F921C7F44E0AE4C3C0D27781 /* InfoPlist.xcstrings */; };
+		644E7DC325E7F2FC7BF7BA3C /* LiveActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB992E199E990B456236907 /* LiveActivityService.swift */; };
+		655E62B49C40B3E0912CFCB1 /* KibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D3175125FC3BAC4ADA916 /* KibleView.swift */; };
+		68CF7DF9213B26D33DA4FEDD /* DailyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2815E05D7DA58908462022 /* DailyContent.swift */; };
+		763C1041E166B0E2DE7D3C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE9C8F9EDAA884170F03FFE /* Assets.xcassets */; };
+		76BD650CF5F1E5DD87712DD2 /* PrayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */; };
+		7A4CD7654C448DAA940DD463 /* VakitlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B29A6B1D04EBFC3897044 /* VakitlerView.swift */; };
+		7D26FD6874EB8E10EC16F976 /* NamazVaktiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB4DDFCBC3BF5D396D191E /* NamazVaktiWatchApp.swift */; };
+		7F7FB92D9BDB05BEFF738838 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0898CD4ED2D7A917DAB58 /* Theme.swift */; };
+		80BAFDA401B247BD48ED1203 /* ZikirmatikView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB3E7CB8537A6172E72FEAB /* ZikirmatikView.swift */; };
+		80DD42BF39AECF5696759412 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A0825FF3959AB4B1277137E3 /* PrivacyInfo.xcprivacy */; };
+		89929DF67AE5A8F7217560B4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0898CD4ED2D7A917DAB58 /* Theme.swift */; };
+		8CBC9D758CA60133F6D054F6 /* NamazVaktiWatchWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 35809E3D8FD7F2311DD5ABC6 /* NamazVaktiWatchWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8DB8340A7FD150A06CE1ED71 /* PrayerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4399E605C37E498544F13CC /* PrayerActivity.swift */; };
+		90A707DAC3B5BABCF6226731 /* WidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A37E5F7EB8196B3AA50CA /* WidgetTimeline.swift */; };
+		9B4E905EFCFF93A8D8246E9F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCD93CCDA44C846BC782A93 /* WidgetKit.framework */; };
+		9BD94839F60F6AEB1F3C041D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BD6846B215A6CC5568061 /* AppState.swift */; };
+		9C37757CDB50D95CA9EC37D6 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 85B13E389C824237DF121C31 /* Adhan */; };
+		9E91C151E0986DCFEE561ED6 /* PrayerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4399E605C37E498544F13CC /* PrayerActivity.swift */; };
+		A8EB05F89EAAF3BFEA781704 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */; };
+		B22E08173002783B5A6E90FD /* BildirimlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89B67971172651A0938E91A /* BildirimlerView.swift */; };
+		B3D686C6A7B3F8AAA1C9AD9F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3DED1073E23E9BF19B0DB015 /* Localizable.xcstrings */; };
+		B6B942CE7DF98B5CFAAFE362 /* WidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A37E5F7EB8196B3AA50CA /* WidgetTimeline.swift */; };
+		B74581A9B6E92D4B935645AE /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 8A0924ED36C8860079D2C7A7 /* Adhan */; };
+		CBF2A5996AF2C18FABB85D8C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 495956E984B729A5EE70AFBB /* PrivacyInfo.xcprivacy */; };
+		CD7C04E1A2AA953E7C453412 /* PrayerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4399E605C37E498544F13CC /* PrayerActivity.swift */; };
+		CF8259C8E281122251014654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A9E0336A2B3531B918A55B /* Assets.xcassets */; };
+		D04773EE46F1AC3E0E2D2F33 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 591BD4BF89025457E78D4DE0 /* Adhan */; };
+		D1541CAA14E0983C3FCDB3E5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3DED1073E23E9BF19B0DB015 /* Localizable.xcstrings */; };
+		D4CE2E80837E604EDC883A11 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */; };
+		D7AE1C320DF71E6CA458338B /* CamilerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4583B57145AA7EBC50A43A9 /* CamilerView.swift */; };
+		DB92DF008BC96AAE54399BF6 /* PrayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */; };
+		DC5B34954F2A9D965821344E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A2966CBC8170536E50D34 /* PrivacyInfo.xcprivacy */; };
+		DE679074FDDFB2266E80440F /* NamazVaktiWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0BEBCC785BFD8831F81D316B /* NamazVaktiWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE6D50B22153774D66687092 /* PrayerIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C52C1AC05587DAB35C0004 /* PrayerIntents.swift */; };
+		DE870D616E6C96EDE7959F68 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B1C48EC6CB781A4D5B69A /* NotificationService.swift */; };
+		DF1F66AE5FAF6D9D93E51D01 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9F04D4212EC158FDA0802695 /* PrivacyInfo.xcprivacy */; };
+		E47249C81675E048F4885ABD /* WidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A37E5F7EB8196B3AA50CA /* WidgetTimeline.swift */; };
+		E849A95EF1F41BBAAF58E01C /* DailyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2815E05D7DA58908462022 /* DailyContent.swift */; };
+		E9239D3F9538BC0811FB8B9E /* AyarlarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E7EF74253EEEC8885EF59 /* AyarlarView.swift */; };
+		EC9D73570987E96F86942FD7 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7E90545769C219FF9815 /* Components.swift */; };
+		EEC9D14730277D25F53225F9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3DED1073E23E9BF19B0DB015 /* Localizable.xcstrings */; };
+		FAC930517111074BAE1E7B25 /* GununIcerigiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6678B3D45AF4425CA8257A /* GununIcerigiView.swift */; };
+		FEEE179E6244584F2085AB03 /* NamazVaktiWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E619C2DFAD56336DE43DFD26 /* NamazVaktiWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4143FD7110B1B501BC5D3EEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 985DF4FB1BBE579CF2E8F4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA826E284FE168F97B3F1CA;
+			remoteInfo = NamazVaktiWatchWidgets;
+		};
+		49FEE07F9885B032B3C4D07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 985DF4FB1BBE579CF2E8F4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B83723699B2A266FC020126;
+			remoteInfo = NamazVaktiWatch;
+		};
+		BBB31D5B27C3E2F8654558B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 985DF4FB1BBE579CF2E8F4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82FE85BED3789764BAF1C96F;
+			remoteInfo = NamazVaktiWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		334585211AEBBABC1B065349 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8CBC9D758CA60133F6D054F6 /* NamazVaktiWatchWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430ADD693329755CDD6DA6E6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FEEE179E6244584F2085AB03 /* NamazVaktiWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7D8DBC1CF7CF0F17F5492F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE679074FDDFB2266E80440F /* NamazVaktiWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		048F863422C340C699D44F0C /* KesfetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KesfetView.swift; sourceTree = "<group>"; };
+		0BEBCC785BFD8831F81D316B /* NamazVaktiWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NamazVaktiWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E966C7CE0323E4F2FB62AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1DCD93CCDA44C846BC782A93 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		227BD6846B215A6CC5568061 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		25A9E0336A2B3531B918A55B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A6718828917C20E6B51B71A /* NamazVaktiWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamazVaktiWidgets.swift; sourceTree = "<group>"; };
+		35807F4348D1CBFD936518D5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		35809E3D8FD7F2311DD5ABC6 /* NamazVaktiWatchWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NamazVaktiWatchWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D7A37E5F7EB8196B3AA50CA /* WidgetTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTimeline.swift; sourceTree = "<group>"; };
+		3DED1073E23E9BF19B0DB015 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		44E95FFDDF1F8449BF7A2FA1 /* WatchComplications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchComplications.swift; sourceTree = "<group>"; };
+		45DB4DDFCBC3BF5D396D191E /* NamazVaktiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamazVaktiWatchApp.swift; sourceTree = "<group>"; };
+		495956E984B729A5EE70AFBB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerEngine.swift; sourceTree = "<group>"; };
+		5B8A2966CBC8170536E50D34 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6206793874D47C057EE87145 /* NamazVaktiWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamazVaktiWatch.entitlements; sourceTree = "<group>"; };
+		634B29A6B1D04EBFC3897044 /* VakitlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VakitlerView.swift; sourceTree = "<group>"; };
+		65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		6A580B48563ED27F99AB6034 /* NamazVakti.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamazVakti.entitlements; sourceTree = "<group>"; };
+		6C132988A68599981D131AF7 /* TakvimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakvimView.swift; sourceTree = "<group>"; };
+		708659EB13726BDD7EA2750E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		74553A7DBEB75D6E6600020C /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
+		74F0898CD4ED2D7A917DAB58 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		7A2815E05D7DA58908462022 /* DailyContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyContent.swift; sourceTree = "<group>"; };
+		7B6678B3D45AF4425CA8257A /* GununIcerigiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GununIcerigiView.swift; sourceTree = "<group>"; };
+		84BDCA09A6257015C3A2EF6E /* NamazVaktiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamazVaktiApp.swift; sourceTree = "<group>"; };
+		855D3175125FC3BAC4ADA916 /* KibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KibleView.swift; sourceTree = "<group>"; };
+		88E9FEBC3DDC2228E63D13D6 /* RamazanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamazanView.swift; sourceTree = "<group>"; };
+		89D9B577097E2A2B7EE65BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8AB992E199E990B456236907 /* LiveActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityService.swift; sourceTree = "<group>"; };
+		8ABEBFFC33DC5BF42EFED4AA /* NamazVaktiWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamazVaktiWidgets.entitlements; sourceTree = "<group>"; };
+		8ADF06DAADFA96CF77A835B6 /* SeyahatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeyahatView.swift; sourceTree = "<group>"; };
+		92C52C1AC05587DAB35C0004 /* PrayerIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerIntents.swift; sourceTree = "<group>"; };
+		945E94205C71F5E969671F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F04D4212EC158FDA0802695 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A0825FF3959AB4B1277137E3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A4583B57145AA7EBC50A43A9 /* CamilerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamilerView.swift; sourceTree = "<group>"; };
+		B4399E605C37E498544F13CC /* PrayerActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerActivity.swift; sourceTree = "<group>"; };
+		B629C922E42C76105D3F7654 /* NamazVaktiWatchWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamazVaktiWatchWidgets.entitlements; sourceTree = "<group>"; };
+		B83C451AF14AEAD5E7549252 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		C38FAEF17D144191CAC7E113 /* TakipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakipView.swift; sourceTree = "<group>"; };
+		C89B67971172651A0938E91A /* BildirimlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BildirimlerView.swift; sourceTree = "<group>"; };
+		CEE9C8F9EDAA884170F03FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5DB0CF0103F49F800A8B16C /* NamazVakti.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NamazVakti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB40AB8D71EFBD788F81ECB /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		DD4F7E90545769C219FF9815 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		E33B1C48EC6CB781A4D5B69A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E619C2DFAD56336DE43DFD26 /* NamazVaktiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamazVaktiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB3E7CB8537A6172E72FEAB /* ZikirmatikView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikirmatikView.swift; sourceTree = "<group>"; };
+		F60E7EF74253EEEC8885EF59 /* AyarlarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyarlarView.swift; sourceTree = "<group>"; };
+		F921C7F44E0AE4C3C0D27781 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		FE0396D87C3C0F6A0A3A4752 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D849F26E1854C920F3C20CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F37A9A93113468FA66F903E /* Adhan in Frameworks */,
+				9B4E905EFCFF93A8D8246E9F /* WidgetKit.framework in Frameworks */,
+				2189706ADA3076830D42EAAE /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F07E93F0250403013BDA18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04773EE46F1AC3E0E2D2F33 /* Adhan in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90EDB2D75B61011F3CBBB78B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C37757CDB50D95CA9EC37D6 /* Adhan in Frameworks */,
+				067FCD4765E7E1A9D1ED4404 /* WidgetKit.framework in Frameworks */,
+				5868D2BDF86665A59C324E6B /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9389DF427958D15D875CEC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74581A9B6E92D4B935645AE /* Adhan in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BBBDDB4817A6E395716DE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F60E7EF74253EEEC8885EF59 /* AyarlarView.swift */,
+				C89B67971172651A0938E91A /* BildirimlerView.swift */,
+				A4583B57145AA7EBC50A43A9 /* CamilerView.swift */,
+				DD4F7E90545769C219FF9815 /* Components.swift */,
+				7B6678B3D45AF4425CA8257A /* GununIcerigiView.swift */,
+				048F863422C340C699D44F0C /* KesfetView.swift */,
+				855D3175125FC3BAC4ADA916 /* KibleView.swift */,
+				88E9FEBC3DDC2228E63D13D6 /* RamazanView.swift */,
+				8ADF06DAADFA96CF77A835B6 /* SeyahatView.swift */,
+				74553A7DBEB75D6E6600020C /* SiriView.swift */,
+				C38FAEF17D144191CAC7E113 /* TakipView.swift */,
+				6C132988A68599981D131AF7 /* TakvimView.swift */,
+				634B29A6B1D04EBFC3897044 /* VakitlerView.swift */,
+				EFB3E7CB8537A6172E72FEAB /* ZikirmatikView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31884B7806F27718EFE3AA9F = {
+			isa = PBXGroup;
+			children = (
+				86FCA8890F425434AC9DA508 /* App */,
+				5F5ACCC30AE68A20857FB190 /* Shared */,
+				5CD13E8501DAA12417884B82 /* Watch */,
+				32ECBCA1B678017158ED8CFB /* WatchWidgets */,
+				FC8A69946CE6307D504CBD73 /* Widgets */,
+				CFBB0C291043CC6CD8863C55 /* Frameworks */,
+				A00AFB31F21DA97F4A7F1FC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32ECBCA1B678017158ED8CFB /* WatchWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				945E94205C71F5E969671F3A /* Info.plist */,
+				B629C922E42C76105D3F7654 /* NamazVaktiWatchWidgets.entitlements */,
+				9F04D4212EC158FDA0802695 /* PrivacyInfo.xcprivacy */,
+				44E95FFDDF1F8449BF7A2FA1 /* WatchComplications.swift */,
+			);
+			path = WatchWidgets;
+			sourceTree = "<group>";
+		};
+		5B3A48C53443DFBB28D71CC0 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				92C52C1AC05587DAB35C0004 /* PrayerIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		5CD13E8501DAA12417884B82 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				25A9E0336A2B3531B918A55B /* Assets.xcassets */,
+				708659EB13726BDD7EA2750E /* Info.plist */,
+				DCB40AB8D71EFBD788F81ECB /* InfoPlist.xcstrings */,
+				6206793874D47C057EE87145 /* NamazVaktiWatch.entitlements */,
+				45DB4DDFCBC3BF5D396D191E /* NamazVaktiWatchApp.swift */,
+				A0825FF3959AB4B1277137E3 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		5F5ACCC30AE68A20857FB190 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7A2815E05D7DA58908462022 /* DailyContent.swift */,
+				3DED1073E23E9BF19B0DB015 /* Localizable.xcstrings */,
+				B4399E605C37E498544F13CC /* PrayerActivity.swift */,
+				576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */,
+				65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */,
+				74F0898CD4ED2D7A917DAB58 /* Theme.swift */,
+				3D7A37E5F7EB8196B3AA50CA /* WidgetTimeline.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		86FCA8890F425434AC9DA508 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FE0396D87C3C0F6A0A3A4752 /* AppShortcuts.xcstrings */,
+				227BD6846B215A6CC5568061 /* AppState.swift */,
+				CEE9C8F9EDAA884170F03FFE /* Assets.xcassets */,
+				89D9B577097E2A2B7EE65BF6 /* Info.plist */,
+				F921C7F44E0AE4C3C0D27781 /* InfoPlist.xcstrings */,
+				6A580B48563ED27F99AB6034 /* NamazVakti.entitlements */,
+				84BDCA09A6257015C3A2EF6E /* NamazVaktiApp.swift */,
+				495956E984B729A5EE70AFBB /* PrivacyInfo.xcprivacy */,
+				5B3A48C53443DFBB28D71CC0 /* Intents */,
+				9B2883D310C1D1AF1AEB078D /* Services */,
+				08BBBDDB4817A6E395716DE0 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9B2883D310C1D1AF1AEB078D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8AB992E199E990B456236907 /* LiveActivityService.swift */,
+				B83C451AF14AEAD5E7549252 /* LocationService.swift */,
+				E33B1C48EC6CB781A4D5B69A /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A00AFB31F21DA97F4A7F1FC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5DB0CF0103F49F800A8B16C /* NamazVakti.app */,
+				E619C2DFAD56336DE43DFD26 /* NamazVaktiWatch.app */,
+				35809E3D8FD7F2311DD5ABC6 /* NamazVaktiWatchWidgets.appex */,
+				0BEBCC785BFD8831F81D316B /* NamazVaktiWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFBB0C291043CC6CD8863C55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35807F4348D1CBFD936518D5 /* SwiftUI.framework */,
+				1DCD93CCDA44C846BC782A93 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC8A69946CE6307D504CBD73 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				0E966C7CE0323E4F2FB62AB5 /* Info.plist */,
+				8ABEBFFC33DC5BF42EFED4AA /* NamazVaktiWidgets.entitlements */,
+				2A6718828917C20E6B51B71A /* NamazVaktiWidgets.swift */,
+				5B8A2966CBC8170536E50D34 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51EED641D30DA55751C4CF41 /* NamazVakti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2BA9EE74661E001FE739E20 /* Build configuration list for PBXNativeTarget "NamazVakti" */;
+			buildPhases = (
+				BC76DD496B17D02DE7B2F1D7 /* Sources */,
+				129E75A5669AB08959DDAB87 /* Resources */,
+				9389DF427958D15D875CEC0F /* Frameworks */,
+				7E7D8DBC1CF7CF0F17F5492F /* Embed Foundation Extensions */,
+				430ADD693329755CDD6DA6E6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8939476A7D7FB9BE6FC2941D /* PBXTargetDependency */,
+				052E1839AA3F6AE31BB69EAC /* PBXTargetDependency */,
+			);
+			name = NamazVakti;
+			packageProductDependencies = (
+				8A0924ED36C8860079D2C7A7 /* Adhan */,
+			);
+			productName = NamazVakti;
+			productReference = D5DB0CF0103F49F800A8B16C /* NamazVakti.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B83723699B2A266FC020126 /* NamazVaktiWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3518382703A21109389F4E80 /* Build configuration list for PBXNativeTarget "NamazVaktiWatch" */;
+			buildPhases = (
+				86A6F38AE4B2E61EF2C3770D /* Sources */,
+				1FF812D36D0A71E2F4175A54 /* Resources */,
+				3F07E93F0250403013BDA18F /* Frameworks */,
+				334585211AEBBABC1B065349 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F67FE0A2EAE71BE147BF558 /* PBXTargetDependency */,
+			);
+			name = NamazVaktiWatch;
+			packageProductDependencies = (
+				591BD4BF89025457E78D4DE0 /* Adhan */,
+			);
+			productName = NamazVaktiWatch;
+			productReference = E619C2DFAD56336DE43DFD26 /* NamazVaktiWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82FE85BED3789764BAF1C96F /* NamazVaktiWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C68676390A7970746BC150 /* Build configuration list for PBXNativeTarget "NamazVaktiWidgets" */;
+			buildPhases = (
+				0A05C3389508AD7917E7CC09 /* Sources */,
+				DE9F5F9B5749AFF4FB5673A2 /* Resources */,
+				90EDB2D75B61011F3CBBB78B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NamazVaktiWidgets;
+			packageProductDependencies = (
+				85B13E389C824237DF121C31 /* Adhan */,
+			);
+			productName = NamazVaktiWidgets;
+			productReference = 0BEBCC785BFD8831F81D316B /* NamazVaktiWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FAA826E284FE168F97B3F1CA /* NamazVaktiWatchWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21DCE7CA95C15D687F5D8E8 /* Build configuration list for PBXNativeTarget "NamazVaktiWatchWidgets" */;
+			buildPhases = (
+				299B6170EB598C87752AA338 /* Sources */,
+				A47328389DD545DA2E8A49C5 /* Resources */,
+				0D849F26E1854C920F3C20CC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NamazVaktiWatchWidgets;
+			packageProductDependencies = (
+				5D52426CCF5DC79E97AAF581 /* Adhan */,
+			);
+			productName = NamazVaktiWatchWidgets;
+			productReference = 35809E3D8FD7F2311DD5ABC6 /* NamazVaktiWatchWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		985DF4FB1BBE579CF2E8F4CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					51EED641D30DA55751C4CF41 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					6B83723699B2A266FC020126 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					82FE85BED3789764BAF1C96F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					FAA826E284FE168F97B3F1CA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A78099CB5B76DBAB9F9D9D1D /* Build configuration list for PBXProject "NamazVakti" */;
+			developmentRegion = tr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				tr,
+			);
+			mainGroup = 31884B7806F27718EFE3AA9F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D0979407871EA53F29C61403 /* XCRemoteSwiftPackageReference "adhan-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A00AFB31F21DA97F4A7F1FC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51EED641D30DA55751C4CF41 /* NamazVakti */,
+				82FE85BED3789764BAF1C96F /* NamazVaktiWidgets */,
+				6B83723699B2A266FC020126 /* NamazVaktiWatch */,
+				FAA826E284FE168F97B3F1CA /* NamazVaktiWatchWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		129E75A5669AB08959DDAB87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC4012FA6FABB57CDA9DCC0 /* AppShortcuts.xcstrings in Resources */,
+				763C1041E166B0E2DE7D3C08 /* Assets.xcassets in Resources */,
+				59C46D490DAE739D33033CA1 /* InfoPlist.xcstrings in Resources */,
+				0CE3477C49BD46F3C97DF96B /* Localizable.xcstrings in Resources */,
+				CBF2A5996AF2C18FABB85D8C /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF812D36D0A71E2F4175A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8259C8E281122251014654 /* Assets.xcassets in Resources */,
+				2E58EFDB056580E9ED92E22F /* InfoPlist.xcstrings in Resources */,
+				EEC9D14730277D25F53225F9 /* Localizable.xcstrings in Resources */,
+				80DD42BF39AECF5696759412 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47328389DD545DA2E8A49C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D686C6A7B3F8AAA1C9AD9F /* Localizable.xcstrings in Resources */,
+				DF1F66AE5FAF6D9D93E51D01 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9F5F9B5749AFF4FB5673A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1541CAA14E0983C3FCDB3E5 /* Localizable.xcstrings in Resources */,
+				DC5B34954F2A9D965821344E /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A05C3389508AD7917E7CC09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A4559C24DE95C68F5BD932 /* DailyContent.swift in Sources */,
+				52BEA6060E3118FAECC7E6E9 /* NamazVaktiWidgets.swift in Sources */,
+				15221A97D0612E336789D0DE /* PrayerActivity.swift in Sources */,
+				DB92DF008BC96AAE54399BF6 /* PrayerEngine.swift in Sources */,
+				05A5DC4A132771B89C0A56C4 /* SharedStore.swift in Sources */,
+				297DA33B41D7D7A5AF6C5EE6 /* Theme.swift in Sources */,
+				B6B942CE7DF98B5CFAAFE362 /* WidgetTimeline.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299B6170EB598C87752AA338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08178C785EAEDC1B0A09DFC3 /* DailyContent.swift in Sources */,
+				9E91C151E0986DCFEE561ED6 /* PrayerActivity.swift in Sources */,
+				211054EDEA81F3570490C080 /* PrayerEngine.swift in Sources */,
+				A8EB05F89EAAF3BFEA781704 /* SharedStore.swift in Sources */,
+				12EDED4709647EC6C45C5D2D /* Theme.swift in Sources */,
+				475A01D40BD6FE8A2CF3EAD4 /* WatchComplications.swift in Sources */,
+				4C918661C4623E14B9F913C2 /* WidgetTimeline.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A6F38AE4B2E61EF2C3770D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CF7DF9213B26D33DA4FEDD /* DailyContent.swift in Sources */,
+				7D26FD6874EB8E10EC16F976 /* NamazVaktiWatchApp.swift in Sources */,
+				8DB8340A7FD150A06CE1ED71 /* PrayerActivity.swift in Sources */,
+				07C94DC607196EABE83EDF10 /* PrayerEngine.swift in Sources */,
+				261C03639D11A7585A86E0F6 /* SharedStore.swift in Sources */,
+				7F7FB92D9BDB05BEFF738838 /* Theme.swift in Sources */,
+				90A707DAC3B5BABCF6226731 /* WidgetTimeline.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC76DD496B17D02DE7B2F1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD94839F60F6AEB1F3C041D /* AppState.swift in Sources */,
+				E9239D3F9538BC0811FB8B9E /* AyarlarView.swift in Sources */,
+				B22E08173002783B5A6E90FD /* BildirimlerView.swift in Sources */,
+				D7AE1C320DF71E6CA458338B /* CamilerView.swift in Sources */,
+				EC9D73570987E96F86942FD7 /* Components.swift in Sources */,
+				E849A95EF1F41BBAAF58E01C /* DailyContent.swift in Sources */,
+				FAC930517111074BAE1E7B25 /* GununIcerigiView.swift in Sources */,
+				3F14C0FBE0474078C7472A01 /* KesfetView.swift in Sources */,
+				655E62B49C40B3E0912CFCB1 /* KibleView.swift in Sources */,
+				644E7DC325E7F2FC7BF7BA3C /* LiveActivityService.swift in Sources */,
+				4C0CC94572AD62755D825294 /* LocationService.swift in Sources */,
+				447944989A99DFBDCAAD5BD2 /* NamazVaktiApp.swift in Sources */,
+				DE870D616E6C96EDE7959F68 /* NotificationService.swift in Sources */,
+				CD7C04E1A2AA953E7C453412 /* PrayerActivity.swift in Sources */,
+				76BD650CF5F1E5DD87712DD2 /* PrayerEngine.swift in Sources */,
+				DE6D50B22153774D66687092 /* PrayerIntents.swift in Sources */,
+				127F66D788C6ED87AE301B0F /* RamazanView.swift in Sources */,
+				502A0CB0297830AC84700A27 /* SeyahatView.swift in Sources */,
+				D4CE2E80837E604EDC883A11 /* SharedStore.swift in Sources */,
+				37C47442171655163846E56C /* SiriView.swift in Sources */,
+				3C6F2D760390E636949C7D41 /* TakipView.swift in Sources */,
+				4E301475C9B46EA679AB55F4 /* TakvimView.swift in Sources */,
+				89929DF67AE5A8F7217560B4 /* Theme.swift in Sources */,
+				7A4CD7654C448DAA940DD463 /* VakitlerView.swift in Sources */,
+				E47249C81675E048F4885ABD /* WidgetTimeline.swift in Sources */,
+				80BAFDA401B247BD48ED1203 /* ZikirmatikView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		052E1839AA3F6AE31BB69EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B83723699B2A266FC020126 /* NamazVaktiWatch */;
+			targetProxy = 49FEE07F9885B032B3C4D07A /* PBXContainerItemProxy */;
+		};
+		2F67FE0A2EAE71BE147BF558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA826E284FE168F97B3F1CA /* NamazVaktiWatchWidgets */;
+			targetProxy = 4143FD7110B1B501BC5D3EEF /* PBXContainerItemProxy */;
+		};
+		8939476A7D7FB9BE6FC2941D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82FE85BED3789764BAF1C96F /* NamazVaktiWidgets */;
+			targetProxy = BBB31D5B27C3E2F8654558B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F30227965685EB3380CDD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/NamazVaktiWidgets.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2D67E5D48478E674608D3F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchWidgets/NamazVaktiWatchWidgets.entitlements;
+				INFOPLIST_FILE = WatchWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.watchkitapp.widgets;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		5FC385AE919C9D2115162325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/NamazVaktiWidgets.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9C0746C16DEE6E32D113AD07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/NamazVaktiWatch.entitlements;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		9C886B99B6B96E761C25E64D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		A89B491400F903A348499260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchWidgets/NamazVaktiWatchWidgets.entitlements;
+				INFOPLIST_FILE = WatchWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.watchkitapp.widgets;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		B5D98357A1558201AC6E15DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		E494099DFECD03F81DB21A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/NamazVaktiWatch.entitlements;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		F38A74BB63F80AAC2D7A1053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/NamazVakti.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F8C7A429CC0425D66A664C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/NamazVakti.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12C68676390A7970746BC150 /* Build configuration list for PBXNativeTarget "NamazVaktiWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC385AE919C9D2115162325 /* Debug */,
+				1F30227965685EB3380CDD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3518382703A21109389F4E80 /* Build configuration list for PBXNativeTarget "NamazVaktiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E494099DFECD03F81DB21A69 /* Debug */,
+				9C0746C16DEE6E32D113AD07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A78099CB5B76DBAB9F9D9D1D /* Build configuration list for PBXProject "NamazVakti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D98357A1558201AC6E15DD /* Debug */,
+				9C886B99B6B96E761C25E64D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D21DCE7CA95C15D687F5D8E8 /* Build configuration list for PBXNativeTarget "NamazVaktiWatchWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D67E5D48478E674608D3F02 /* Debug */,
+				A89B491400F903A348499260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E2BA9EE74661E001FE739E20 /* Build configuration list for PBXNativeTarget "NamazVakti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C7A429CC0425D66A664C37 /* Debug */,
+				F38A74BB63F80AAC2D7A1053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0979407871EA53F29C61403 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/batoulapps/adhan-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		591BD4BF89025457E78D4DE0 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0979407871EA53F29C61403 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+		5D52426CCF5DC79E97AAF581 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0979407871EA53F29C61403 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+		85B13E389C824237DF121C31 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0979407871EA53F29C61403 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+		8A0924ED36C8860079D2C7A7 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0979407871EA53F29C61403 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 985DF4FB1BBE579CF2E8F4CC /* Project object */;
+}
