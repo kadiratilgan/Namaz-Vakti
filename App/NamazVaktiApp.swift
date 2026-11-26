@@ -36,7 +36,7 @@ struct NamazVaktiApp: App {
         }
     }
 
-    static func scheduleRefresh() {
+    nonisolated static func scheduleRefresh() {
         let request = BGAppRefreshTaskRequest(identifier: refreshTaskID)
         request.earliestBeginDate = Date().addingTimeInterval(3 * 3600)
         try? BGTaskScheduler.shared.submit(request)

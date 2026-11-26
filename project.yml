@@ -159,11 +159,39 @@ targets:
         TARGETED_DEVICE_FAMILY: "4"
         SKIP_INSTALL: YES
 
+  NamazVaktiTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: NamazVakti
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.kadiratilgan.namazvakti.tests
+
+  NamazVaktiUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: NamazVakti
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.kadiratilgan.namazvakti.uitests
+        TEST_TARGET_NAME: NamazVakti
+
 schemes:
   NamazVakti:
     build:
       targets:
         NamazVakti: all
+    test:
+      config: Debug
+      targets:
+        - NamazVaktiTests
+        - NamazVaktiUITests
     run:
       config: Debug
     archive:

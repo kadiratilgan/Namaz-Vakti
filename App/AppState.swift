@@ -56,6 +56,18 @@ final class AppState: ObservableObject {
         siriSuggestions = SharedStore.bool(K.siriSuggestions, default: true)
         onboarded = d.bool(forKey: K.onboarded)
 
+        // UI tests: skip onboarding, use a fixed city and the requested language/theme.
+        let args = ProcessInfo.processInfo.arguments
+        if args.contains("-uitest") {
+            onboarded = true
+            autoLocation = false
+            let p = Place(lat: 52.52, lon: 13.405, city: "Berlin")
+            place = p
+            SharedStore.place = p
+            if let i = args.firstIndex(of: "-lang"), i + 1 < args.count { language = args[i + 1]; d.set(language, forKey: K.language) }
+            if let i = args.firstIndex(of: "-theme"), i + 1 < args.count { theme = args[i + 1] }
+        }
+
         location.onLocation = { [weak self] loc in
             Task { @MainActor in self?.handle(location: loc) }
         }
