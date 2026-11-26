@@ -17,6 +17,7 @@
 		12EDED4709647EC6C45C5D2D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0898CD4ED2D7A917DAB58 /* Theme.swift */; };
 		15221A97D0612E336789D0DE /* PrayerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4399E605C37E498544F13CC /* PrayerActivity.swift */; };
 		1BC4012FA6FABB57CDA9DCC0 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FE0396D87C3C0F6A0A3A4752 /* AppShortcuts.xcstrings */; };
+		1EC4AB40E7BE857B22229B64 /* PrayerEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE60BC821311338807DD6C5 /* PrayerEngineTests.swift */; };
 		211054EDEA81F3570490C080 /* PrayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */; };
 		2189706ADA3076830D42EAAE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35807F4348D1CBFD936518D5 /* SwiftUI.framework */; };
 		261C03639D11A7585A86E0F6 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */; };
@@ -58,6 +59,7 @@
 		B3D686C6A7B3F8AAA1C9AD9F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3DED1073E23E9BF19B0DB015 /* Localizable.xcstrings */; };
 		B6B942CE7DF98B5CFAAFE362 /* WidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A37E5F7EB8196B3AA50CA /* WidgetTimeline.swift */; };
 		B74581A9B6E92D4B935645AE /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 8A0924ED36C8860079D2C7A7 /* Adhan */; };
+		C731B056D65F19F4448D2626 /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04B251DFEF04EF00405CEF5 /* ScreenshotTests.swift */; };
 		CBF2A5996AF2C18FABB85D8C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 495956E984B729A5EE70AFBB /* PrivacyInfo.xcprivacy */; };
 		CD7C04E1A2AA953E7C453412 /* PrayerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4399E605C37E498544F13CC /* PrayerActivity.swift */; };
 		CF8259C8E281122251014654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A9E0336A2B3531B918A55B /* Assets.xcassets */; };
@@ -81,6 +83,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3949058A2A12C5A3177E59D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 985DF4FB1BBE579CF2E8F4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51EED641D30DA55751C4CF41;
+			remoteInfo = NamazVakti;
+		};
+		3BB27C15C00487C0868ACA67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 985DF4FB1BBE579CF2E8F4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51EED641D30DA55751C4CF41;
+			remoteInfo = NamazVakti;
+		};
 		4143FD7110B1B501BC5D3EEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 985DF4FB1BBE579CF2E8F4CC /* Project object */;
@@ -144,6 +160,7 @@
 		048F863422C340C699D44F0C /* KesfetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KesfetView.swift; sourceTree = "<group>"; };
 		0BEBCC785BFD8831F81D316B /* NamazVaktiWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NamazVaktiWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E966C7CE0323E4F2FB62AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1478F6B96D3096E66A4D55D9 /* NamazVaktiUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NamazVaktiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCD93CCDA44C846BC782A93 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		227BD6846B215A6CC5568061 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		25A9E0336A2B3531B918A55B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +174,7 @@
 		495956E984B729A5EE70AFBB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		576B093DDA9E2E8A25867C24 /* PrayerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerEngine.swift; sourceTree = "<group>"; };
 		5B8A2966CBC8170536E50D34 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5EE60BC821311338807DD6C5 /* PrayerEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerEngineTests.swift; sourceTree = "<group>"; };
 		6206793874D47C057EE87145 /* NamazVaktiWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamazVaktiWatch.entitlements; sourceTree = "<group>"; };
 		634B29A6B1D04EBFC3897044 /* VakitlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VakitlerView.swift; sourceTree = "<group>"; };
 		65FD1B38DAF318BAE3C5D236 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
@@ -182,6 +200,8 @@
 		B4399E605C37E498544F13CC /* PrayerActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerActivity.swift; sourceTree = "<group>"; };
 		B629C922E42C76105D3F7654 /* NamazVaktiWatchWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamazVaktiWatchWidgets.entitlements; sourceTree = "<group>"; };
 		B83C451AF14AEAD5E7549252 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		BAC996DEFFB0176E1D1EAD03 /* NamazVaktiTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NamazVaktiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04B251DFEF04EF00405CEF5 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		C38FAEF17D144191CAC7E113 /* TakipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakipView.swift; sourceTree = "<group>"; };
 		C89B67971172651A0938E91A /* BildirimlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BildirimlerView.swift; sourceTree = "<group>"; };
 		CEE9C8F9EDAA884170F03FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -262,6 +282,8 @@
 			children = (
 				86FCA8890F425434AC9DA508 /* App */,
 				5F5ACCC30AE68A20857FB190 /* Shared */,
+				EC995803EEAC13582E9CE858 /* Tests */,
+				3512E169D33DD15BB640E757 /* UITests */,
 				5CD13E8501DAA12417884B82 /* Watch */,
 				32ECBCA1B678017158ED8CFB /* WatchWidgets */,
 				FC8A69946CE6307D504CBD73 /* Widgets */,
@@ -279,6 +301,14 @@
 				44E95FFDDF1F8449BF7A2FA1 /* WatchComplications.swift */,
 			);
 			path = WatchWidgets;
+			sourceTree = "<group>";
+		};
+		3512E169D33DD15BB640E757 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C04B251DFEF04EF00405CEF5 /* ScreenshotTests.swift */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 		5B3A48C53443DFBB28D71CC0 /* Intents */ = {
@@ -348,6 +378,8 @@
 			isa = PBXGroup;
 			children = (
 				D5DB0CF0103F49F800A8B16C /* NamazVakti.app */,
+				BAC996DEFFB0176E1D1EAD03 /* NamazVaktiTests.xctest */,
+				1478F6B96D3096E66A4D55D9 /* NamazVaktiUITests.xctest */,
 				E619C2DFAD56336DE43DFD26 /* NamazVaktiWatch.app */,
 				35809E3D8FD7F2311DD5ABC6 /* NamazVaktiWatchWidgets.appex */,
 				0BEBCC785BFD8831F81D316B /* NamazVaktiWidgets.appex */,
@@ -362,6 +394,14 @@
 				1DCD93CCDA44C846BC782A93 /* WidgetKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC995803EEAC13582E9CE858 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5EE60BC821311338807DD6C5 /* PrayerEngineTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		FC8A69946CE6307D504CBD73 /* Widgets */ = {
@@ -444,6 +484,42 @@
 			productReference = 0BEBCC785BFD8831F81D316B /* NamazVaktiWidgets.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		936E00806EB3E12B282797C8 /* NamazVaktiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6E61D0E8F2266EFEBB904F /* Build configuration list for PBXNativeTarget "NamazVaktiTests" */;
+			buildPhases = (
+				65DF44800F59038920269C37 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F189543ADC8A96E3A9E68D6 /* PBXTargetDependency */,
+			);
+			name = NamazVaktiTests;
+			packageProductDependencies = (
+			);
+			productName = NamazVaktiTests;
+			productReference = BAC996DEFFB0176E1D1EAD03 /* NamazVaktiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8B9CAE73CD1707A5AF034AC /* NamazVaktiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B55D8B1A774939079979171 /* Build configuration list for PBXNativeTarget "NamazVaktiUITests" */;
+			buildPhases = (
+				F3B898CA689198C1BFBC2413 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71809937001ECF5C5EB465ED /* PBXTargetDependency */,
+			);
+			name = NamazVaktiUITests;
+			packageProductDependencies = (
+			);
+			productName = NamazVaktiUITests;
+			productReference = 1478F6B96D3096E66A4D55D9 /* NamazVaktiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FAA826E284FE168F97B3F1CA /* NamazVaktiWatchWidgets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D21DCE7CA95C15D687F5D8E8 /* Build configuration list for PBXNativeTarget "NamazVaktiWatchWidgets" */;
@@ -471,7 +547,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					51EED641D30DA55751C4CF41 = {
 						DevelopmentTeam = "";
@@ -484,6 +560,15 @@
 					82FE85BED3789764BAF1C96F = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
+					};
+					936E00806EB3E12B282797C8 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					C8B9CAE73CD1707A5AF034AC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 51EED641D30DA55751C4CF41;
 					};
 					FAA826E284FE168F97B3F1CA = {
 						DevelopmentTeam = "";
@@ -514,6 +599,8 @@
 				82FE85BED3789764BAF1C96F /* NamazVaktiWidgets */,
 				6B83723699B2A266FC020126 /* NamazVaktiWatch */,
 				FAA826E284FE168F97B3F1CA /* NamazVaktiWatchWidgets */,
+				936E00806EB3E12B282797C8 /* NamazVaktiTests */,
+				C8B9CAE73CD1707A5AF034AC /* NamazVaktiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -591,6 +678,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65DF44800F59038920269C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC4AB40E7BE857B22229B64 /* PrayerEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86A6F38AE4B2E61EF2C3770D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,6 +733,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3B898CA689198C1BFBC2413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C731B056D65F19F4448D2626 /* ScreenshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -646,10 +749,20 @@
 			target = 6B83723699B2A266FC020126 /* NamazVaktiWatch */;
 			targetProxy = 49FEE07F9885B032B3C4D07A /* PBXContainerItemProxy */;
 		};
+		2F189543ADC8A96E3A9E68D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51EED641D30DA55751C4CF41 /* NamazVakti */;
+			targetProxy = 3BB27C15C00487C0868ACA67 /* PBXContainerItemProxy */;
+		};
 		2F67FE0A2EAE71BE147BF558 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FAA826E284FE168F97B3F1CA /* NamazVaktiWatchWidgets */;
 			targetProxy = 4143FD7110B1B501BC5D3EEF /* PBXContainerItemProxy */;
+		};
+		71809937001ECF5C5EB465ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51EED641D30DA55751C4CF41 /* NamazVakti */;
+			targetProxy = 3949058A2A12C5A3177E59D1 /* PBXContainerItemProxy */;
 		};
 		8939476A7D7FB9BE6FC2941D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -692,6 +805,23 @@
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
+		};
+		4A93D2A6F59E9ABDEDBC6595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NamazVakti.app/NamazVakti";
+			};
+			name = Release;
 		};
 		5FC385AE919C9D2115162325 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -802,6 +932,23 @@
 			};
 			name = Release;
 		};
+		AD2051B12A89506F5B4A5975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NamazVakti;
+			};
+			name = Release;
+		};
 		B5D98357A1558201AC6E15DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -871,6 +1018,23 @@
 			};
 			name = Debug;
 		};
+		D07F27FE00A2573387E465AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NamazVakti;
+			};
+			name = Debug;
+		};
 		E494099DFECD03F81DB21A69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -903,6 +1067,23 @@
 			};
 			name = Release;
 		};
+		F46F51D9D7793392D180BE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadiratilgan.namazvakti.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NamazVakti.app/NamazVakti";
+			};
+			name = Debug;
+		};
 		F8C7A429CC0425D66A664C37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -934,6 +1115,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		2B55D8B1A774939079979171 /* Build configuration list for PBXNativeTarget "NamazVaktiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07F27FE00A2573387E465AC /* Debug */,
+				AD2051B12A89506F5B4A5975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		3518382703A21109389F4E80 /* Build configuration list for PBXNativeTarget "NamazVaktiWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -948,6 +1138,15 @@
 			buildConfigurations = (
 				B5D98357A1558201AC6E15DD /* Debug */,
 				9C886B99B6B96E761C25E64D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC6E61D0E8F2266EFEBB904F /* Build configuration list for PBXNativeTarget "NamazVaktiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F46F51D9D7793392D180BE79 /* Debug */,
+				4A93D2A6F59E9ABDEDBC6595 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

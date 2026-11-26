@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1600"
+   LastUpgradeVersion = "1430"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
-      buildArchitectures = "Automatic"
       runPostActionsOnFailure = "NO">
       <BuildActionEntries>
          <BuildActionEntry
@@ -40,7 +39,31 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "936E00806EB3E12B282797C8"
+               BuildableName = "NamazVaktiTests.xctest"
+               BlueprintName = "NamazVaktiTests"
+               ReferencedContainer = "container:NamazVakti.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8B9CAE73CD1707A5AF034AC"
+               BuildableName = "NamazVaktiUITests.xctest"
+               BlueprintName = "NamazVaktiUITests"
+               ReferencedContainer = "container:NamazVakti.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
