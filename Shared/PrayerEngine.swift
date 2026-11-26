@@ -77,7 +77,8 @@ enum PrayerEngine {
         return params
     }
 
-    static func times(for day: Date, place: Place, calendar: Calendar = .current) -> DayTimes? {
+    static func times(for day: Date, place: Place, calendar: Calendar? = nil) -> DayTimes? {
+        let calendar = calendar ?? place.calendar
         let comps = calendar.dateComponents([.year, .month, .day], from: day)
         let coords = Coordinates(latitude: place.lat, longitude: place.lon)
         guard let p = PrayerTimes(coordinates: coords, date: comps, calculationParameters: parameters) else { return nil }
@@ -88,7 +89,8 @@ enum PrayerEngine {
         ])
     }
 
-    static func moment(at now: Date, place: Place, calendar: Calendar = .current) -> PrayerMoment? {
+    static func moment(at now: Date, place: Place, calendar: Calendar? = nil) -> PrayerMoment? {
+        let calendar = calendar ?? place.calendar
         guard let today = times(for: now, place: place, calendar: calendar),
               let tomorrowDate = calendar.date(byAdding: .day, value: 1, to: now),
               let yesterdayDate = calendar.date(byAdding: .day, value: -1, to: now),
@@ -112,7 +114,8 @@ enum PrayerEngine {
     }
 
     /// End of a prayer's time: the start of the following time slot.
-    static func endOfTime(for kind: PrayerKind, on day: Date, place: Place, calendar: Calendar = .current) -> Date? {
+    static func endOfTime(for kind: PrayerKind, on day: Date, place: Place, calendar: Calendar? = nil) -> Date? {
+        let calendar = calendar ?? place.calendar
         guard let t = times(for: day, place: place, calendar: calendar) else { return nil }
         switch kind {
         case .fajr: return t.time(.sunrise)
@@ -173,8 +176,11 @@ enum PrayerEngine {
 // MARK: - Formatting helpers
 
 enum Fmt {
+    static var timeZone: TimeZone { SharedStore.place.timeZone }
+
     static func time(_ date: Date) -> String {
         let f = DateFormatter()
+        f.timeZone = timeZone
         f.locale = Loc.locale
         f.dateFormat = "HH:mm"
         return f.string(from: date)
@@ -183,6 +189,7 @@ enum Fmt {
     static func longDate(_ date: Date) -> String {
         let f = DateFormatter()
         f.locale = Loc.locale
+        f.timeZone = timeZone
         f.setLocalizedDateFormatFromTemplate("EEEEdMMMMy")
         return f.string(from: date)
     }
@@ -214,6 +221,12 @@ enum Fmt {
     }
 
     static func minutes(_ seconds: TimeInterval) -> Int { max(0, Int((seconds / 60).rounded(.up))) }
+
+    /// "in 25 min" / "in 8 h 5 min"
+    static func inRelative(_ seconds: TimeInterval) -> String {
+        let m = minutes(seconds)
+        return m >= 60 ? Loc.f("%lld sa %lld dk sonra", m / 60, m % 60) : Loc.f("%lld dk sonra", m)
+    }
 
     static func km(_ value: Double) -> String {
         let f = NumberFormatter()

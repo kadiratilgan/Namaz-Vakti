@@ -32,7 +32,7 @@ struct RamazanView: View {
         let first = days.first ?? Date()
         let last = days.last ?? Date()
         ScreenScroll {
-            ScreenTitle(title: Loc.f("Ramazan %lld", PrayerEngine.hijriYear(first)),
+            ScreenTitle(title: Loc.f("Ramazan %@", String(PrayerEngine.hijriYear(first))),
                         subtitle: "\(Fmt.shortDate(first)) – \(Fmt.shortDate(last)) · \(state.place.city)")
             TimelineView(.periodic(from: .now, by: 1)) { ctx in countdown(now: ctx.date, days: days) }
 

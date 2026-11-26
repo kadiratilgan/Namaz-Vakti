@@ -119,7 +119,7 @@ private struct RamadanHero: View {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 3) {
                     Text(Fmt.longDate(now)).font(.subheadline.weight(.semibold))
-                    Text(Loc.f("Ramazan %lld · %lld. gün", PrayerEngine.hijriYear(now), day)).font(.footnote).foregroundStyle(Theme.goldText)
+                    Text(Loc.f("Ramazan %@ · %lld. gün", String(PrayerEngine.hijriYear(now)), day)).font(.footnote).foregroundStyle(Theme.goldText)
                 }
                 Spacer()
                 Text(Loc.s("RAMAZAN")).font(.caption.weight(.semibold)).tracking(1).foregroundStyle(Theme.gold)
@@ -205,7 +205,7 @@ private struct TimesList: View {
                     .background(Theme.bordo, in: RoundedRectangle(cornerRadius: 8)).foregroundStyle(.white)
             } else if isNext {
                 let left = moment.nextDate.timeIntervalSince(now)
-                Text(left > 0 ? Loc.f("%lld dk sonra", Fmt.minutes(left)) : Loc.s("vakit girdi"))
+                Text(left > 0 ? Fmt.inRelative(left) : Loc.s("vakit girdi"))
                     .font(.caption2.weight(.semibold)).padding(.horizontal, 7).padding(.vertical, 3)
                     .background(Theme.softGold, in: RoundedRectangle(cornerRadius: 8)).foregroundStyle(Theme.goldInk)
             }

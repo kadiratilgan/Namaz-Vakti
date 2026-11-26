@@ -8465,6 +8465,75 @@
           }
         }
       }
+    },
+    "%lld sa %lld dk sonra": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sa %lld dk sonra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in %lld h %lld min"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in %lld Std. %lld Min."
+          }
+        }
+      }
+    },
+    "Ramazan %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ramazan %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ramadan %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ramadan %@"
+          }
+        }
+      }
+    },
+    "Ramazan %@ · %lld. gün": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ramazan %@ · %lld. gün"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ramadan %1$@ · Day %2$lld"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ramadan %1$@ · Tag %2$lld"
+          }
+        }
+      }
     }
   }
 }

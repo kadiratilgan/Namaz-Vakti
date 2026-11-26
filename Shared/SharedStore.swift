@@ -7,8 +7,18 @@ struct Place: Codable, Equatable, Hashable {
     var lat: Double
     var lon: Double
     var city: String
+    var tz: String? = nil
 
-    static let fallback = Place(lat: 41.0082, lon: 28.9784, city: "İstanbul")
+    static let fallback = Place(lat: 41.0082, lon: 28.9784, city: "İstanbul", tz: "Europe/Istanbul")
+
+    /// Prayer times are shown in the place's own time zone (e.g. a manually chosen city abroad).
+    var timeZone: TimeZone { tz.flatMap(TimeZone.init(identifier:)) ?? .current }
+
+    var calendar: Calendar {
+        var c = Calendar(identifier: .gregorian)
+        c.timeZone = timeZone
+        return c
+    }
 }
 
 /// Settings and records shared by the app, its widgets and (on the watch) the watch app.

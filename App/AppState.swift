@@ -61,7 +61,7 @@ final class AppState: ObservableObject {
         if args.contains("-uitest") {
             onboarded = true
             autoLocation = false
-            let p = Place(lat: 52.52, lon: 13.405, city: "Berlin")
+            let p = Place(lat: 52.52, lon: 13.405, city: "Berlin", tz: "Europe/Berlin")
             place = p
             SharedStore.place = p
             if let i = args.firstIndex(of: "-lang"), i + 1 < args.count { language = args[i + 1]; d.set(language, forKey: K.language) }
@@ -130,7 +130,7 @@ final class AppState: ObservableObject {
         var recent = SharedStore.get(K.recentCities, as: [RecentCity].self) ?? []
         if previous.city != p.city {
             recent.removeAll { $0.city == previous.city }
-            recent.insert(RecentCity(city: previous.city, lat: previous.lat, lon: previous.lon, date: Date()), at: 0)
+            recent.insert(RecentCity(city: previous.city, lat: previous.lat, lon: previous.lon, tz: previous.tz, date: Date()), at: 0)
             SharedStore.set(Array(recent.prefix(10)), for: K.recentCities)
         }
         afterChange()
@@ -153,7 +153,7 @@ final class AppState: ObservableObject {
             let city = marks?.first?.locality ?? marks?.first?.administrativeArea ?? String(format: "%.2f, %.2f", loc.coordinate.latitude, loc.coordinate.longitude)
             Task { @MainActor in
                 guard let self else { return }
-                let newPlace = Place(lat: loc.coordinate.latitude, lon: loc.coordinate.longitude, city: city)
+                let newPlace = Place(lat: loc.coordinate.latitude, lon: loc.coordinate.longitude, city: city, tz: marks?.first?.timeZone?.identifier)
                 let wasSet = SharedStore.placeIsSet
                 self.apply(place: newPlace)
                 if wasSet && self.travelMode && current.city != city {
@@ -195,5 +195,6 @@ struct RecentCity: Codable, Hashable {
     let city: String
     let lat: Double
     let lon: Double
+    var tz: String? = nil
     let date: Date
 }

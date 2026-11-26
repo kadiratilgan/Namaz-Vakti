@@ -190,7 +190,7 @@ struct KonumView: View {
                 ForEach(results, id: \.self) { item in
                     Button {
                         let c = item.placemark.coordinate
-                        state.setManualPlace(Place(lat: c.latitude, lon: c.longitude, city: item.name ?? item.placemark.locality ?? ""))
+                        state.setManualPlace(Place(lat: c.latitude, lon: c.longitude, city: item.name ?? item.placemark.locality ?? "", tz: item.timeZone?.identifier))
                         dismiss()
                     } label: {
                         VStack(alignment: .leading) {

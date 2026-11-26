@@ -81,17 +81,25 @@ struct CamilerView: View {
         .padding(.vertical, 12)
     }
 
+    /// Map search is fuzzy (e.g. "cami" matches shop names), so keep only places named like a mosque.
+    static func looksLikeMosque(_ name: String) -> Bool {
+        let n = name.lowercased(with: Locale(identifier: "tr"))
+        return ["cami", "mosch", "mosque", "masjid", "mescid", "mescit", "moskee", "mosquée", "islam", "ditib", "diyanet", "jami", "camii"]
+            .contains { n.contains($0) }
+    }
+
     private func search() async {
         loading = true
         let center = CLLocationCoordinate2D(latitude: state.place.lat, longitude: state.place.lon)
+        position = .region(MKCoordinateRegion(center: center, latitudinalMeters: 5000, longitudinalMeters: 5000))
         var found: [Mosque] = []
-        for query in ["mosque", "cami", "Moschee"] {
+        for query in ["mosque", "camii", "Moschee", "masjid"] {
             let request = MKLocalSearch.Request()
             request.naturalLanguageQuery = query
             request.region = MKCoordinateRegion(center: center, latitudinalMeters: 6000, longitudinalMeters: 6000)
             request.resultTypes = .pointOfInterest
             if let response = try? await MKLocalSearch(request: request).start() {
-                for item in response.mapItems {
+                for item in response.mapItems where Self.looksLikeMosque(item.name ?? "") {
                     let c = item.placemark.coordinate
                     let km = PrayerEngine.distance(from: state.place, toLat: c.latitude, lon: c.longitude)
                     let id = "\(item.name ?? "")-\(Int(c.latitude * 10000))-\(Int(c.longitude * 10000))"

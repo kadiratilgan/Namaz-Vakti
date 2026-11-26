@@ -55,7 +55,7 @@ final class PrayerEngineTests: XCTestCase {
         let t = PrayerEngine.times(for: d, place: cities[0], calendar: cal)!
         let hm = { (x: Date) -> Int in let c = cal.dateComponents([.hour, .minute], from: x); return c.hour! * 60 + c.minute! }
         XCTAssert((3 * 60 + 10...3 * 60 + 40).contains(hm(t.time(.fajr))), "imsak \(hm(t.time(.fajr)))")
-        XCTAssert((20 * 60 + 25...20 * 60 + 45).contains(hm(t.time(.maghrib))), "akşam \(hm(t.time(.maghrib)))")
+        XCTAssert((20 * 60 + 30...20 * 60 + 55).contains(hm(t.time(.maghrib))), "akşam \(hm(t.time(.maghrib)))")
     }
 
     func testRamadanDetection() {

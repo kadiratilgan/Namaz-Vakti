@@ -50,7 +50,7 @@ final class WatchModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         CLGeocoder().reverseGeocodeLocation(loc) { marks, _ in
             let city = marks?.first?.locality ?? self.place.city
             DispatchQueue.main.async {
-                let p = Place(lat: loc.coordinate.latitude, lon: loc.coordinate.longitude, city: city)
+                let p = Place(lat: loc.coordinate.latitude, lon: loc.coordinate.longitude, city: city, tz: marks?.first?.timeZone?.identifier)
                 self.place = p
                 SharedStore.place = p
                 WidgetCenter.shared.reloadAllTimelines()

@@ -78,7 +78,7 @@ struct SeyahatView: View {
                         ForEach(Array(recent.prefix(5).enumerated()), id: \.offset) { index, c in
                             if index > 0 { RowDivider() }
                             Button {
-                                state.setManualPlace(Place(lat: c.lat, lon: c.lon, city: c.city))
+                                state.setManualPlace(Place(lat: c.lat, lon: c.lon, city: c.city, tz: c.tz))
                             } label: {
                                 HStack {
                                     VStack(alignment: .leading, spacing: 2) {

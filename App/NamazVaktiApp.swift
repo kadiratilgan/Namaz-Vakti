@@ -8,7 +8,7 @@ struct NamazVaktiApp: App {
     @StateObject private var state = AppState()
     @Environment(\.scenePhase) private var scenePhase
 
-    static let refreshTaskID = "com.kadiratilgan.namazvakti.refresh"
+    nonisolated static let refreshTaskID = "com.kadiratilgan.namazvakti.refresh"
 
     var body: some Scene {
         WindowGroup {
