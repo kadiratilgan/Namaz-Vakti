@@ -1,0 +1,38 @@
+name: Build
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Xcode version
+        run: xcodebuild -version && xcrun simctl list runtimes | head -20
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate project
+        run: xcodegen generate
+
+      - name: Build (iOS app + widgets + Apple Watch)
+        run: |
+          xcodebuild -project NamazVakti.xcodeproj -scheme NamazVakti \
+            -destination 'generic/platform=iOS Simulator' \
+            -skipPackagePluginValidation -skipMacroValidation \
+            CODE_SIGNING_ALLOWED=NO build > build.log 2>&1 && echo "BUILD OK" || \
+          (grep -E "error:|Error:" build.log | sort -u | head -100; tail -30 build.log; exit 1)
+
+      - name: Upload project and log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: namazvakti-build
+          path: |
+            build.log
+            NamazVakti.xcodeproj

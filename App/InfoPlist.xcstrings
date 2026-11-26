@@ -1,0 +1,75 @@
+{
+  "sourceLanguage": "tr",
+  "version": "1.0",
+  "strings": {
+    "CFBundleDisplayName": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namaz Vakti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namaz Vakti"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namaz Vakti"
+          }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namaz vakitlerini ve kıble yönünü bulunduğun yere göre hesaplamak için konumunu kullanırız. Konumun cihazından çıkmaz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We use your location to calculate prayer times and the Qibla direction for where you are. Your location never leaves your device."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wir nutzen deinen Standort, um Gebetszeiten und die Qibla-Richtung für deinen Ort zu berechnen. Dein Standort verlässt dein Gerät nicht."
+          }
+        }
+      }
+    },
+    "NSLocationAlwaysAndWhenInUseUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seyahat modunda şehir değiştiğinde vakitleri otomatik güncellemek için konumunu kullanırız. Konumun cihazından çıkmaz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In travel mode we use your location to update prayer times automatically when you change city. Your location never leaves your device."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im Reisemodus nutzen wir deinen Standort, um die Gebetszeiten bei einem Ortswechsel automatisch anzupassen. Dein Standort verlässt dein Gerät nicht."
+          }
+        }
+      }
+    }
+  }
+}

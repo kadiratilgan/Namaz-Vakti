@@ -1,0 +1,166 @@
+{
+  "sourceLanguage": "tr",
+  "version": "1.0",
+  "strings": {
+    "${applicationName} sıradaki vakit": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Next prayer in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Nächstes Gebet in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} sıradaki vakit ne zaman": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "When is the next prayer in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Wann ist das nächste Gebet in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} ${prayer} ne zaman": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "When is ${prayer} in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Wann ist ${prayer} in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} ${prayer} vakti": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${prayer} time in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${prayer}-Zeit in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} bugünkü vakitler": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Today's prayer times in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Gebetszeiten heute in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} kıble ne tarafta": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Qibla direction in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Qibla-Richtung in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} iftara ne kadar kaldı": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Time until iftar in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Zeit bis Iftar in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} zikirmatiği aç": {
+      "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Open the dhikr counter in ${applicationName}"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Dhikr-Zähler in ${applicationName} öffnen"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

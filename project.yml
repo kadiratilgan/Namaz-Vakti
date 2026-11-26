@@ -1,0 +1,170 @@
+name: NamazVakti
+options:
+  bundleIdPrefix: com.kadiratilgan
+  developmentLanguage: tr
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Automatic
+    # Apple Developer hesabındaki Team ID'yi buraya yaz (Xcode › Settings › Accounts).
+    DEVELOPMENT_TEAM: ""
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+
+packages:
+  Adhan:
+    url: https://github.com/batoulapps/adhan-swift
+    from: 1.4.0
+
+targets:
+  NamazVakti:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Shared
+    dependencies:
+      - package: Adhan
+      - target: NamazVaktiWidgets
+      - target: NamazVaktiWatch
+    entitlements:
+      path: App/NamazVakti.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.kadiratilgan.namazvakti
+        com.apple.developer.usernotifications.time-sensitive: true
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Namaz Vakti
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [tr, en, de]
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+        LSRequiresIPhoneOS: true
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSSupportsLiveActivities: true
+        NSLocationWhenInUseUsageDescription: "Namaz vakitlerini ve kıble yönünü bulunduğun yere göre hesaplamak için konumunu kullanırız. Konumun cihazından çıkmaz."
+        NSLocationAlwaysAndWhenInUseUsageDescription: "Seyahat modunda şehir değiştiğinde vakitleri otomatik güncellemek için konumunu kullanırız. Konumun cihazından çıkmaz."
+        UIBackgroundModes: [fetch]
+        BGTaskSchedulerPermittedIdentifiers: [com.kadiratilgan.namazvakti.refresh]
+        CFBundleURLTypes:
+          - CFBundleURLName: com.kadiratilgan.namazvakti
+            CFBundleURLSchemes: [namazvakti]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kadiratilgan.namazvakti
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1"
+        ENABLE_PREVIEWS: YES
+
+  NamazVaktiWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widgets
+      - path: Shared
+    dependencies:
+      - package: Adhan
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+    entitlements:
+      path: Widgets/NamazVaktiWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.kadiratilgan.namazvakti
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: Namaz Vakti
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kadiratilgan.namazvakti.widgets
+        TARGETED_DEVICE_FAMILY: "1"
+        SKIP_INSTALL: YES
+
+  NamazVaktiWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - path: Watch
+      - path: Shared
+    dependencies:
+      - package: Adhan
+      - target: NamazVaktiWatchWidgets
+    entitlements:
+      path: Watch/NamazVaktiWatch.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.kadiratilgan.namazvakti
+    info:
+      path: Watch/Info.plist
+      properties:
+        CFBundleDisplayName: Namaz Vakti
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [tr, en, de]
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: com.kadiratilgan.namazvakti
+        NSLocationWhenInUseUsageDescription: "Namaz vakitlerini bulunduğun yere göre hesaplamak için konumunu kullanırız."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kadiratilgan.namazvakti.watchkitapp
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "4"
+        SKIP_INSTALL: YES
+
+  NamazVaktiWatchWidgets:
+    type: app-extension
+    platform: watchOS
+    sources:
+      - path: WatchWidgets
+      - path: Shared
+    dependencies:
+      - package: Adhan
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+    entitlements:
+      path: WatchWidgets/NamazVaktiWatchWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.kadiratilgan.namazvakti
+    info:
+      path: WatchWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: Namaz Vakti
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kadiratilgan.namazvakti.watchkitapp.widgets
+        TARGETED_DEVICE_FAMILY: "4"
+        SKIP_INSTALL: YES
+
+schemes:
+  NamazVakti:
+    build:
+      targets:
+        NamazVakti: all
+    run:
+      config: Debug
+    archive:
+      config: Release
